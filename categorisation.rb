@@ -289,7 +289,8 @@ RULES_RASHODI = {
 		/VISA electron-obr/,
 		/Kamata-Tekući račun/,
 		/NAKNADA ZA KORISTENJE SEFA/,
-		/Naknada za obnavu limita FL/
+		/Naknada za obnavu limita FL/,
+		/ELBA desinh. token/
 	],
 	'Porezi i kazne' => [
 		/POREZ NA PROMET NEPOKRETNOSTI/,
@@ -317,7 +318,8 @@ RULES_RASHODI = {
 	],
 	'Pozajmice' => [
 		/UPLATA POZAJMICE/,
-		/POVRAT POZAJMNICE/
+		/POVRAT POZAJMNICE/,
+		/^UPLATA$/
 	],
 	'Nepoznato' => [
 		/Dnevne transakcije po tek\.rn/,
@@ -328,8 +330,8 @@ RULES_RASHODI = {
 
 RULES_PRIHODI = {
 	'Plata' => [
-		/Plata\b/,
-		/PLATA\b/,
+		/^Plata\b/,
+		/^PLATA\b/,
 		/TOPLI OBROK I PREVOZ/
 	],
 	'Dnevnice za poslovni put' => [
@@ -341,18 +343,22 @@ RULES_PRIHODI = {
 		/ELBA\b/,
 		/NA SBERBANK RACUN/,
 		/PRENOS SREDSTAVA/,
-		/^UPLATA$/
 	],
 	'Pozajmice' => [
 		/POVRAT POZAJMNICE/,
 		/VRACANJE POZAJMICE/,
-		/POVRAT POZAJMICE/
+		/POVRAT POZAJMICE/,
+		/^UPLATA$/,
+		/UPLATA NOVCA/
 	],
 	'Isplata dobiti' => [
 		/DOBITI\b/	
 	],
 	'Kredit' => [
 		/Pustanja kredita/
+	],
+	'Kamata' => [
+		/Kamata-Tekući račun/
 	]
 }
 
